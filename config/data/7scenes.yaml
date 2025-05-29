@@ -1,0 +1,4 @@
+dataset: 7scenes
+dataset_config:
+  seq: 0
+  data_root: /data1/data/zlq_datasets/7-scenes

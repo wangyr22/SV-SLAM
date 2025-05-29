@@ -1,0 +1,8 @@
+dataset: simple
+dataset_config:
+  # fill in data location & camera intrinsics
+  imgdir:
+  fx:
+  fy:
+  cx:
+  cy:

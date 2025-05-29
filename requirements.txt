@@ -1,0 +1,14 @@
+# lines commented out shall be deleted after testing.
+numpy==1.24.0
+scikit-learn
+roma
+matplotlib
+tqdm
+opencv-python
+scipy
+einops
+trimesh
+natsort
+patchify
+pyglet<2
+huggingface-hub[torch]>=0.22

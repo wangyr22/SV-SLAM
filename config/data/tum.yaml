@@ -1,0 +1,4 @@
+dataset: tum
+dataset_config:
+  seq: 0
+  data_root: /data1/data/zlq_datasets/TUM_RGBD

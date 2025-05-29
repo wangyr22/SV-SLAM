@@ -1,0 +1,22 @@
+ba:
+  ba_every: 10
+  use_ds: true
+  use_pts_ratio: 0.5
+general:
+  fix_last: true
+  merge_pointmap: true
+  thresh_binarize: 0.15
+  thresh_fail: 0.2
+  thresh_newframe: 0.6
+loop:
+  do_loop: true
+  nums_history: 3
+  nums_local: 2
+  thresh_loop: 0.1
+  thresh_loop_degree: 30.0
+  window_local: 8
+  filter_by_3d: true
+  thresh_inlier: 0.05
+save:
+  save_mask: false
+  save_vis: true
