@@ -1,4 +1,3 @@
-# 25/2/12. Utilities for masks. wyr
 from patchify import patchify
 import torch
 import numpy as np

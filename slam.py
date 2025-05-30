@@ -1,4 +1,3 @@
-# 25/3/3. Renamed from 'pre_slam' to 'slam'.
 import os
 from os.path import join as pjoin
 import json

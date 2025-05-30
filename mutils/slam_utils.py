@@ -1,4 +1,3 @@
-
 def export_kitti_pose(pose_list, out_path):
     """
     Export pose in kitti format. see https://github.com/MichaelGrupp/evo/wiki/Formats

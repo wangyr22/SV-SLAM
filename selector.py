@@ -80,7 +80,6 @@ class CBAM(nn.Module):
         sa = self.spatial_att(torch.cat([max_pool, avg_pool], dim=1))
         return x * sa
 
-# ASPP 模块，用于多尺度上下文特征融合
 class ASPP(nn.Module):
     def __init__(self, in_channels, out_channels):
         super().__init__()
@@ -110,11 +109,11 @@ class EnhancedCovisHead(nn.Module):
         super().__init__()
         self.sigmoid = nn.Sigmoid()
         self.block = nn.Sequential(
-            ResidualBlock(input_dim, 256),   # 第一个残差块
-            CBAM(256),                       # 第一个 CBAM 模块
-            ResidualBlock(256, 256, dilation=2),  # 扩张残差块，扩大感受野
-            CBAM(256),                       # 第二个 CBAM 模块
-            ASPP(256, 128),                  # ASPP 模块，多尺度信息融合
+            ResidualBlock(input_dim, 256),
+            CBAM(256),
+            ResidualBlock(256, 256, dilation=2),
+            CBAM(256),
+            ASPP(256, 128),
             nn.Conv2d(128, 1, kernel_size=1) 
         )
 
@@ -122,7 +121,6 @@ class EnhancedCovisHead(nn.Module):
         return self.sigmoid(self.block(x))
 
 class OffsetGenerator(nn.Module):
-    """深层 offset 生成模块，kernel_size=3 对应 offset 通道数 = 2*3*3 = 18"""
     def __init__(self, in_channels, kernel_size=3, padding=1):
         super().__init__()
         offset_channels = 2 * kernel_size * kernel_size
@@ -136,7 +134,6 @@ class OffsetGenerator(nn.Module):
         return self.offset_gen(x)
 
 class SEBlock(nn.Module):
-    """Squeeze-and-Excitation 模块，自适应通道加权"""
     def __init__(self, channel, reduction=16):
         super(SEBlock, self).__init__()
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
@@ -205,6 +202,7 @@ class FrameSelector(nn.Module):
         if add_recognize_head:
             self.recognize_head = RecognizeHead(input_dim=corrdims + fmapdims)
 
+        # for training
         # ############ SelfSupervisedHomography #############
         # self.correlation = nn.Sequential(
         #     nn.Conv2d(256 *2, 128, 3, padding=1),

@@ -1,4 +1,3 @@
-# 25/2/?. wyr
 from time import perf_counter
 from tqdm import tqdm
 from einops import rearrange

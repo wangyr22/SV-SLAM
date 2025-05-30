@@ -1,4 +1,3 @@
-# 25/1/30. Datasets. wyr
 import os
 from os.path import join as pjoin
 import json
@@ -263,7 +262,6 @@ class SScenesDataset:
     __img_path_fmt = "{}/{}/seq-01/frame-{}.color.png"
     pose_path_fmt = "{}/{}/seq-01/frame-{:06d}.pose.txt"
 
-    # TODO
     # Data from NICER-SLAM; intrinsics are obtained by COLMAP.
     intrinsic_data = {
         "chess": {"fx": 535.30153598, "fy": 533.71239636, "cx": 316.85634818, "cy": 239.75744442},
