@@ -45,7 +45,7 @@ cd ../..
 ```
 Then, download MASt3R checkpoint from [MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric](https://download.europe.naverlabs.com/ComputerVision/MASt3R/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth) and put in `thirdparty/mast3r/checkpoints`.
 
-TODO: selector checkpoint
+Download selector checkpoint from [here](https://drive.google.com/drive/folders/1_Ne0lPMglyF2q1LdWYAGT2I69di-VNbi?usp=drive_link) and put it in `selector`.
 
 ### Run on 7-Scenes and TUM-RGBD
 
