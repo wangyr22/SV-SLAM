@@ -61,7 +61,7 @@ python slam.py --expdir 7scenes_demo \
 
 ### Run on Custom Data
 
-To run with custom data (unposed RGD image sequence), modify `config/data/simple.yaml` accoding to data location and camera intrinsics. You can also modify SLAM configuration in `config/slam/simple.yaml`.
+To run with custom data (unposed RGB image sequence), modify `config/data/simple.yaml` accoding to data location and camera intrinsics. You can also modify SLAM configuration in `config/slam/simple.yaml`.
 ```shell
 python slam.py --expdir demo \
     --data_config config/data/simple.yaml \
