@@ -1,5 +1,5 @@
 # Sparse View SLAM with Ultrafast Keyframe Selector
-### Paper(TODO) | Project Page(TODO)
+### Paper(TODO) | Video(TODO)
 
 > Sparse View SLAM with Ultrafast Keyframe Selector  
 > [Linqing Zhao](https://scholar.google.com/citations?user=ypxt5UEAAAAJ&hl=zh-CN&oi=ao)\*, [Xiuwei Xu](https://xuxw98.github.io/)\*, Yirui Wang\*, [Wenzhao Zheng](https://wzzheng.net/), [Jie Zhou](https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)†
