@@ -9,12 +9,16 @@
 SV-SLAM is a SLAM system with <b>>100fps</b> inference speed that enables ultrafast tracking and mapping with a <b>keyframe selector module</b>.
 
 ## News
-- [2025/5/xx] Code released.
+- [2025/8/25] Code released.
 
 ## Demo
 
 ### SLAM System
 ![demo](./assets/slam_demo.gif)
+
+### UAV SLAM 
+![demo](./assets/demo1.gif)
+![demo](./assets/demo2.gif)
 
 ### Keyframe Selector
 
